@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Real-Time Language Translation</string>
+    <string name="loading">Loading...</string>
+    <string name="real_time_language_translation">Real-Time Language Translation</string>
+    <string name="todo">TODO</string>
+    <string name="developed_by_amit_rajbhar">Developed by Amit Rajbhar</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splashlogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/todo"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/applogo2" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashlogo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:contextClickable="false"
+        android:elegantTextHeight="true"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:freezesText="false"
+        android:text="@string/real_time_language_translation"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_color"/>
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/biryani_bold"
+        android:text="@string/loading"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/sofia"
+        android:text="@string/developed_by_amit_rajbhar"
+        android:textColor="#2298F6"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"/>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="@drawable/bg1">
+
+    <ScrollView
+        android:layout_above="@id/optionsl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sourceLanguageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text here..."
+            android:textColorHint="#80000000"
+            android:minHeight="100dp"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/destinationLanguageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:text=""
+            android:textIsSelectable="true"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/optionsl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/translateBtn"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sourceLanguageChooseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbtn"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_forward_24"
+            android:contentDescription="TODO"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/destinationLanguageChooseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindi"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/roundbtn"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/translateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbtn"
+        android:drawableStart="@drawable/baseline_translate_24"
+        android:fontFamily="@font/days_one"
+
+        android:paddingHorizontal="20dp"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>
